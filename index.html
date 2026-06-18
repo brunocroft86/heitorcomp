@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heitor Eletro | Tudo para sua casa com qualidade e preço justo</title>
-    <!-- Google Fonts -->
+    
+    <meta name="description" content="Ofertas imbatíveis em eletrodomésticos, eletrônicos e portáteis. Aproveite a Terça Maluca na Heitor Eletro! Assistência técnica de TVs e eletrodomésticos em Nova Iguaçu.">
+    <meta name="keywords" content="eletrodomésticos, eletrônicos, assistência técnica, conserto de tv, Heitor Eletro, Nova Iguaçu, terça maluca, eletroportáteis, conserto de geladeira">
+    <meta name="author" content="Heitor Eletro">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFD700">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brunocroft86.github.io/heitorcomp/">
+    <meta property="og:title" content="Heitor Eletro | Tudo para sua casa com preço justo!">
+    <meta property="og:description" content="Ofertas imbatíveis toda Terça Maluca. Eletrodomésticos, eletrônicos e assistência técnica especializada em Nova Iguaçu.">
+    <meta property="og:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heitor Eletro | Qualidade e Preço Justo">
+    <meta name="twitter:description" content="Eletrodomésticos e Assistência Técnica de TVs em Nova Iguaçu. Confira nossas ofertas!">
+    <meta name="twitter:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
+
+    <link rel="canonical" href="https://brunocroft86.github.io/heitorcomp/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ElectronicsStore",
+      "name": "Heitor Eletro",
+      "image": "https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png",
+      "@id": "https://brunocroft86.github.io/heitorcomp/",
+      "url": "https://brunocroft86.github.io/heitorcomp/",
+      "telephone": "+5521976408505",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Portão de Ferro - RJ-105, 4803",
+        "addressLocality": "Nova Iguaçu",
+        "addressRegion": "RJ",
+        "postalCode": "26290-600",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "10:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -631,12 +691,10 @@
 </head>
 <body>
 
-    <!-- Botão de WhatsApp Flutuante -->
     <a href="https://wa.me/5521976408505?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20ofertas." class="wpp-flutuante" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- CABEÇALHO -->
     <header>
         <div class="header-container">
             <a href="#" class="logo">
@@ -658,7 +716,6 @@
         </div>
     </header>
 
-    <!-- BANNER PRINCIPAL (HERO) -->
     <section class="hero">
         <div class="hero-content">
             <span class="badge-terca"><i class="fas fa-fire"></i> Promoções Semanais</span>
@@ -668,7 +725,6 @@
         </div>
     </section>
 
-    <!-- DIFERENCIAIS -->
     <section class="diferenciais">
         <div class="container">
             <div class="grid-diferenciais">
@@ -696,7 +752,6 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE PRODUTOS COM FILTRO E BUSCA -->
     <section id="produtos" class="terca-maluca-section">
         <div class="container">
             <div class="titulo-secao">
@@ -706,13 +761,11 @@
                 </p>
             </div>
 
-            <!-- BARRA DE PESQUISA -->
             <div class="busca-container">
                 <i class="fas fa-search"></i>
                 <input type="text" id="inputBusca" placeholder="O que você procura? Ex: fogão, ferro, ventilador...">
             </div>
 
-            <!-- BOTÕES DE FILTRO -->
             <div class="filtros-categoria">
                 <button class="btn-filtro ativo" onclick="filtrarCategoria('todos', this)">Ver Todos</button>
                 <button class="btn-filtro" onclick="filtrarCategoria('eletrodomesticos', this)">Eletrodomésticos</button>
@@ -721,11 +774,9 @@
                 <button class="btn-filtro" onclick="filtrarCategoria('acessorios', this)">Acessórios</button>
             </div>
 
-            <!-- GRID ÚNICO DE PRODUTOS -->
             <div class="grid-produtos" id="gridProdutos">
                 
-<!-- CATEGORIA: ELETRODOMÉSTICOS -->
-                <div class="produto-card" data-categoria="eletrodomesticos">
+<div class="produto-card" data-categoria="eletrodomesticos">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/cooktop_4b_itatiaia.jpeg" alt="Cooktop 4 bocas Itatiaia" loading="lazy">
@@ -880,8 +931,7 @@
                     </div>
                 </div>
 
-<!-- CATEGORIA: ELETRÔNICOS -->
-                <div class="produto-card" data-categoria="eletronicos">
+<div class="produto-card" data-categoria="eletronicos">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/antena_externa.jpeg" alt="Antena digital externa" loading="lazy">
@@ -1050,8 +1100,7 @@
                     </div>
                 </div>
 
-<!-- CATEGORIA: PORTÁTEIS -->
-                <div class="produto-card" data-categoria="portateis">
+<div class="produto-card" data-categoria="portateis">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/airfryer_gaabor.jpeg" alt="AirFryer Gaabor 5.5 L" loading="lazy">
@@ -1275,7 +1324,20 @@
                         </a>
                     </div>
                 </div>
-                
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferrobeck.webp" alt="Ferro Automático Black & Decker" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Ferro Automático Black & Decker</h3>
+                        <div class="preco-por">R$ 100,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20Automático%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
                 <div class="produto-card" data-categoria="portateis">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
@@ -1543,8 +1605,7 @@
                     </div>
                 </div>
 
-<!-- CATEGORIA: ACESSÓRIOS -->
-                <div class="produto-card" data-categoria="acessorios">
+<div class="produto-card" data-categoria="acessorios">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/cabo_coaxial.jpeg" alt="Cabo coaxial para antena digital" loading="lazy">
@@ -1629,7 +1690,6 @@
                     </div>
                 </div>
 
-                <!-- Mensagem de erro caso a pesquisa não ache nada -->
                 <div class="mensagem-erro-busca" id="mensagemErro">
                     <i class="fas fa-search" style="font-size: 30px; margin-bottom: 10px; color: var(--cor-primaria);"></i><br>
                     Ops! Não encontramos nenhum produto com esse nome.
@@ -1639,7 +1699,6 @@
         </div>
     </section>
 
-    <!-- ASSISTÊNCIA TÉCNICA -->
     <section id="assistencia" class="assistencia">
         <div class="container">
             <div class="assistencia-wrapper">
@@ -1660,7 +1719,6 @@
         </div>
     </section>
 
-    <!-- REDES SOCIAIS -->
     <section class="redes-instagram">
         <div class="container">
             <div class="titulo-secao">Siga Nossas <span>Redes Sociais</span></div>
@@ -1676,17 +1734,14 @@
         </div>
     </section>
 
-    <!-- RODAPÉ E CONTATOS -->
     <footer id="contato">
         <div class="container">
             <div class="footer-grid">
-                <!-- Coluna 1 -->
                 <div class="footer-box">
                     <h3 style="font-style: italic;">HEITOR ELETRO</h3>
                     <p>Tudo para sua casa com qualidade e preço justo!</p>
                     <p style="margin-top: 15px;"><i class="fab fa-whatsapp"></i> (21) 97640-8505</p>
                 </div>
-                <!-- Coluna 2 -->
                 <div class="footer-box">
                     <h3>Funcionamento</h3>
                     <ul class="horarios">
@@ -1699,7 +1754,6 @@
                         <li><span>Domingo:</span> <span>10:00 – 14:00</span></li>
                     </ul>
                 </div>
-                <!-- Coluna 3 -->
                 <div class="footer-box">
                     <h3>Onde Estamos</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Portão de Ferro - RJ-105, 4803<br>Valverde, Nova Iguaçu - RJ<br>CEP: 26290-600</p>
@@ -1722,7 +1776,6 @@
         </div>
     </footer>
 
-    <!-- SCRIPT DE BUSCA E FILTRO INTELIGENTE -->
     <script>
         let categoriaAtual = 'todos';
         
