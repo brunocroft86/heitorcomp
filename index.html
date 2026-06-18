@@ -1,4 +1,4 @@
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -271,7 +271,7 @@ html_content = """<!DOCTYPE html>
         .produto-card {
             background-color: var(--cor-card);
             border-radius: 8px;
-            overflow: hidden; /* Essencial para a imagem não sair do card no zoom */
+            overflow: hidden;
             position: relative;
             border: 1px solid #222;
             transition: box-shadow 0.3s ease, border-color 0.3s ease;
@@ -309,15 +309,15 @@ html_content = """<!DOCTYPE html>
             justify-content: center;
             align-items: center;
             padding: 20px;
-            overflow: hidden; /* Garante que o zoom fique contido aqui */
+            overflow: hidden;
         }
 
         /* UX/UI Atualizado para não cortar imagens e animar o hover */
         .produto-imagem img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Alterado de 'cover' para 'contain' para não cortar a imagem */
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave */
+            object-fit: contain;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .produto-info {
@@ -626,7 +626,7 @@ html_content = """<!DOCTYPE html>
         </div>
     </section>
 
-    <!-- SEÇÃO DE PRODUTOS (ATUALIZADA COM AS FOTOS E EFEITOS UX/UI) -->
+    <!-- SEÇÃO DE PRODUTOS -->
     <section id="produtos" class="terca-maluca-section">
         <div class="container">
             <div class="titulo-secao">
