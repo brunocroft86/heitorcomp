@@ -1,0 +1,873 @@
+html_content = """<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heitor Eletro | Tudo para sua casa com qualidade e preço justo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- VARIÁVEIS DE CORES (Identidade Visual da Van) --- */
+        :root {
+            --cor-fundo: #121212;
+            --cor-card: #1e1e1e;
+            --cor-primaria: #FFD700; /* Amarelo Heitor Eletro */
+            --cor-primaria-hover: #e6c200;
+            --cor-texto: #ffffff;
+            --cor-texto-secundario: #aaaaaa;
+            --cor-whatsapp: #25D366;
+            --fonte-principal: 'Poppins', sans-serif;
+        }
+
+        /* --- RESET E ESTILOS GERAIS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            font-family: var(--fonte-principal);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a {
+            text-transform: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* --- BOTÃO FLUTUANTE WHATSAPP --- */
+        .wpp-flutuante {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--cor-whatsapp);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .wpp-flutuante:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- CABEÇALHO (HEADER) --- */
+        header {
+            background-color: rgba(0, 0, 0, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            border-bottom: 2px solid var(--cor-primaria);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        /* Estilos atualizados para a Logo em Imagem */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--cor-primaria);
+        }
+
+        .menu-terca {
+            color: var(--cor-primaria);
+            animation: pulse-text 1.5s infinite;
+        }
+
+        .redes-sociais-header a {
+            font-size: 18px;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+
+        .redes-sociais-header a:hover {
+            color: var(--cor-primaria);
+        }
+
+        /* --- BANNER PRINCIPAL (HERO) --- */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200') no-repeat center center/cover;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid var(--cor-primaria);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .badge-terca {
+            background-color: #ff3333;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse-bg 1.5s infinite;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--cor-texto);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: var(--cor-primaria);
+            display: block;
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--cor-texto-secundario);
+            margin-bottom: 30px;
+        }
+
+        .btn-principal {
+            background-color: var(--cor-primaria);
+            color: #000;
+            padding: 12px 35px;
+            font-weight: 700;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-principal:hover {
+            background-color: var(--cor-primaria-hover);
+            transform: translateY(-2px);
+        }
+
+        /* --- DIFERENCIAIS (Adesivos da Van) --- */
+        .diferenciais {
+            background-color: var(--cor-card);
+            padding: 50px 0;
+        }
+
+        .grid-diferenciais {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .item-diferencial {
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .item-diferencial:hover {
+            transform: translateY(-5px);
+            border-color: var(--cor-primaria);
+        }
+
+        .item-diferencial i {
+            font-size: 36px;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        .item-diferencial h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .item-diferencial p {
+            font-size: 13px;
+            color: var(--cor-texto-secundario);
+        }
+
+        /* --- SEÇÃO DE PRODUTOS E OFERTAS --- */
+        .terca-maluca-section {
+            background: linear-gradient(135deg, #121212 0%, #2a2200 100%);
+            border-left: 5px solid var(--cor-primaria);
+            border-right: 5px solid var(--cor-primaria);
+        }
+
+        .titulo-secao {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .titulo-secao span {
+            color: var(--cor-primaria);
+        }
+
+        .grid-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .produto-card {
+            background-color: var(--cor-card);
+            border-radius: 8px;
+            overflow: hidden; /* Essencial para a imagem não sair do card no zoom */
+            position: relative;
+            border: 1px solid #222;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Melhoria de UI do card no hover */
+        .produto-card:hover {
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        /* Efeito de zoom na imagem ao passar o mouse */
+        .produto-card:hover .produto-imagem img {
+            transform: scale(1.15);
+        }
+
+        .selo-desconto {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #ff3333;
+            color: white;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 3px;
+            z-index: 10;
+        }
+
+        .produto-imagem {
+            width: 100%;
+            height: 220px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden; /* Garante que o zoom fique contido aqui */
+        }
+
+        /* UX/UI Atualizado para não cortar imagens e animar o hover */
+        .produto-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Alterado de 'cover' para 'contain' para não cortar a imagem */
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação suave */
+        }
+
+        .produto-info {
+            padding: 20px;
+        }
+
+        .produto-categoria {
+            font-size: 12px;
+            color: var(--cor-primaria);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .produto-nome {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            height: 54px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .preco-por {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        .btn-wpp-produto {
+            background-color: transparent;
+            border: 2px solid var(--cor-whatsapp);
+            color: var(--cor-whatsapp);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-wpp-produto:hover {
+            background-color: var(--cor-whatsapp);
+            color: #fff;
+        }
+
+        /* --- ASSISTÊNCIA TÉCNICA --- */
+        .assistencia {
+            background-color: #1a1a1a;
+            border-top: 1px solid #333;
+        }
+
+        .assistencia-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .assistencia-texto {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .assistencia-texto h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .assistencia-texto h2 span {
+            color: var(--cor-primaria);
+        }
+
+        .assistencia-texto p {
+            color: var(--cor-texto-secundario);
+            margin-bottom: 25px;
+        }
+
+        .assistencia-imagem {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .assistencia-imagem img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 2px solid var(--cor-primaria);
+        }
+
+        /* --- REDES SOCIAIS E FEED --- */
+        .redes-instagram {
+            text-align: center;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn-social {
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s;
+        }
+
+        .btn-social:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+
+        .btn-facebook {
+            background-color: #1877F2;
+            color: white;
+        }
+
+        /* --- RODAPÉ (FOOTER) --- */
+        footer {
+            background-color: #0a0a0a;
+            border-top: 3px solid var(--cor-primaria);
+            padding: 6px 0 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #222;
+        }
+
+        .footer-box h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--cor-primaria);
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .footer-box h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--cor-primaria);
+        }
+
+        .footer-box p, .footer-box li {
+            font-size: 14px;
+            color: var(--cor-texto-secundario);
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        .footer-box i {
+            color: var(--cor-primaria);
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .horarios li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #222;
+            padding-bottom: 5px;
+        }
+
+        .copy {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #555;
+            background-color: #050505;
+        }
+
+        /* --- MAPA INTEGRADO --- */
+        .mapa-container {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 15px;
+            border: 1px solid #333;
+        }
+
+        /* --- ANIMAÇÕES --- */
+        @keyframes pulse-text {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; color: #fff; }
+            100% { opacity: 0.7; }
+        }
+
+        @keyframes pulse-bg {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 15px;
+            }
+            .assistencia-wrapper {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão de WhatsApp Flutuante -->
+    <a href="https://wa.me/5521976408505?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20ofertas." class="wpp-flutuante" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="img/logo_heitor.png" alt="Logo Heitor Eletro">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#terca-maluca" class="menu-terca"><i class="fas fa-bolt"></i> Terça Maluca</a></li>
+                    <li><a href="#assistencia">Assistência Técnica</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="redes-sociais-header">
+                <a href="https://www.instagram.com/heitorlibonate/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/heitortv/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL (HERO) -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge-terca"><i class="fas fa-fire"></i> Promoções Semanais</span>
+            <h1>Tudo para sua casa <span>Com Qualidade e Preço Justo!</span></h1>
+            <p>Eletrodomésticos novos e seminovos com as melhores condições e garantia que você só encontra aqui na Heitor Eletro.</p>
+            <a href="#terca-maluca" class="btn-principal">Ver Ofertas em Destaque</a>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="diferenciais">
+        <div class="container">
+            <div class="grid-diferenciais">
+                <div class="item-diferencial">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Facilidade no Pagamento</h3>
+                    <p>Parcelamos no cartão com as melhores taxas.</p>
+                </div>
+                <div class="item-diferencial">
+                    <i class="fas fa-star"></i>
+                    <h3>As Melhores Marcas</h3>
+                    <p>Produtos selecionados de altíssima qualidade.</p>
+                </div>
+                <div class="item-diferencial">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantia e Confiança</h3>
+                    <p>Sua compra 100% segura e garantida.</p>
+                </div>
+                <div class="item-diferencial">
+                    <i class="fas fa-truck"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>Agilidade na entrega direto na sua casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PRODUTOS (ATUALIZADA COM AS FOTOS E EFEITOS UX/UI) -->
+    <section id="produtos" class="terca-maluca-section">
+        <div class="container">
+            <div class="titulo-secao">
+                ⚡ Nossos <span>Destaques</span> ⚡
+                <p style="font-size: 14px; text-transform: none; color: var(--cor-texto-secundario); font-weight: normal; margin-top: 10px;">
+                    Confira as ofertas incríveis que preparamos para você!
+                </p>
+            </div>
+
+            <div class="grid-produtos">
+                
+                <!-- Forno Suggar -->
+                <div class="produto-card">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/forno.jpg" alt="Forno Elétrico Suggar 42L">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Forno Elétrico Suggar 42L</h3>
+                        <div class="preco-por">R$ 379,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Forno%20Elétrico%20Suggar%2042L%20por%20R$%20379,99." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lâmpada Câmera Wi-Fi -->
+                <div class="produto-card">
+                    <div class="selo-desconto">PROMOÇÃO</div>
+                    <div class="produto-imagem">
+                        <img src="img/lamp.jpg" alt="Lâmpada Câmera Wi-Fi Durawell">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Segurança Inteligente</div>
+                        <h3 class="produto-nome">Lâmpada Câmera Wi-Fi (1 por 89,99 ou 2 por 149,00)</h3>
+                        <div class="preco-por">R$ 89,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20a%20Lâmpada%20Câmera%20Wi-Fi." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caixa Torre Pulse -->
+                <div class="produto-card">
+                    <div class="selo-desconto">SOM POTENTE</div>
+                    <div class="produto-imagem">
+                        <img src="img/caixa torre.jpg" alt="Caixa Torre Pulse 1500W">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Áudio</div>
+                        <h3 class="produto-nome">Caixa Torre Pulse Multi 1500 Watts</h3>
+                        <div class="preco-por">R$ 1.299,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20a%20Caixa%20Torre%20Pulse%201500W." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jogo de Panelas Cereja -->
+                <div class="produto-card">
+                    <div class="selo-desconto">BAIXOU!</div>
+                    <div class="produto-imagem">
+                        <img src="img/panelas.webp" alt="Jogo de Panelas Cor Cereja">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Utilidades Domésticas</div>
+                        <h3 class="produto-nome">Jogo de Panelas Antiaderente (Cor Cereja)</h3>
+                        <div class="preco-por">R$ 139,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Jogo%20de%20Panelas%20Cereja." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fogão Suggar -->
+                <div class="produto-card">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/fogao sugar preto.webp" alt="Fogão Suggar 4 Bocas">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Fogão Suggar 4 Bocas Mesa de Vidro</h3>
+                        <div class="preco-por">R$ 899,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Fogão%20Suggar%20por%20R$%20899,00." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Fogão Itatiaia -->
+                 <div class="produto-card">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/fogaoitatiaia.webp" alt="Fogão Itatiaia 4 Bocas Preto">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Fogão Itatiaia 4 Bocas Preto</h3>
+                        <div class="preco-por">R$ 969,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Fogão%20Itatiaia%20Preto." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Fogão Esmaltec -->
+                 <div class="produto-card">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/fogaobranco.jpg" alt="Fogão Esmaltec Branco">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Fogão Esmaltec Branco</h3>
+                        <div class="preco-por">R$ 799,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Fogão%20Esmaltec%20Branco." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ferro Kian / Startools -->
+                <div class="produto-card">
+                    <div class="selo-desconto">BARATO!</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferrokian.webp" alt="Ferro de Passar Kian">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletroportáteis</div>
+                        <h3 class="produto-nome">Ferro a Seco Kian ou Startools Soft</h3>
+                        <div class="preco-por">R$ 89,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Ferro%20de%20Passar%20por%20R$%2089,99." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ferro Black & Decker -->
+                <div class="produto-card">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferrobeck.webp" alt="Ferro Automático Black & Decker">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletroportáteis</div>
+                        <h3 class="produto-nome">Ferro Automático Black & Decker</h3>
+                        <div class="preco-por">R$ 100,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o%20Ferro%20Black%20&%20Decker." target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ASSISTÊNCIA TÉCNICA (Eletrônica Heitor TV) -->
+    <section id="assistencia" class="assistencia">
+        <div class="container">
+            <div class="assistencia-wrapper">
+                <div class="assistencia-texto">
+                    <h2>Eletrônica <span>Heitor TV</span></h2>
+                    <p>Seu eletrodoméstico ou televisão apresentou defeito? Não se preocupe! Nós temos a solução ideal com orçamento rápido e conserto especializado de TVs e aparelhos domésticos em geral.</p>
+                    <p><i class="fas fa-check-circle" style="color: var(--cor-primaria);"></i> Técnicos qualificados</p>
+                    <p><i class="fas fa-check-circle" style="color: var(--cor-primaria);"></i> Peças com garantia</p>
+                    <p><i class="fas fa-check-circle" style="color: var(--cor-primaria);"></i> Transparência e Honestidade</p>
+                    <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20agendar%20um%20orçamento%20de%20assistência%20técnica." target="_blank" class="btn-principal" style="margin-top: 15px;">
+                        <i class="fas fa-tools"></i> Solicitar Assistência Técnica
+                    </a>
+                </div>
+                <div class="assistencia-imagem">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600" alt="Assistência Técnica de TV">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDES SOCIAIS -->
+    <section class="redes-instagram">
+        <div class="container">
+            <div class="titulo-secao">Siga Nossas <span>Redes Sociais</span></div>
+            <p>Fique por dentro de todas as novidades diárias e acompanhe as entregas feitas com a nossa van oficial!</p>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/heitorlibonate/" target="_blank" rel="noopener noreferrer" class="btn-social btn-instagram">
+                    <i class="fab fa-instagram"></i> @heitorlibonate
+                </a>
+                <a href="https://www.facebook.com/heitortv/" target="_blank" rel="noopener noreferrer" class="btn-social btn-facebook">
+                    <i class="fab fa-facebook"></i> Heitor TV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ E CONTATOS -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1 -->
+                <div class="footer-box">
+                    <h3 style="font-style: italic;">HEITOR ELETRO</h3>
+                    <p>Tudo para sua casa com qualidade e preço justo!</p>
+                    <p style="margin-top: 15px;"><i class="fab fa-whatsapp"></i> (21) 97640-8505</p>
+                </div>
+                <!-- Coluna 2 -->
+                <div class="footer-box">
+                    <h3>Funcionamento</h3>
+                    <ul class="horarios">
+                        <li><span>Segunda-feira:</span> <span>10:00 – 17:00</span></li>
+                        <li><span>Terça-feira:</span> <span>10:00 – 18:00</span></li>
+                        <li><span>Quarta-feira:</span> <span>10:00 – 18:00</span></li>
+                        <li><span>Quinta-feira:</span> <span>10:00 – 18:00</span></li>
+                        <li><span>Sexta-feira:</span> <span>10:00 – 18:00</span></li>
+                        <li><span>Sábado:</span> <span>10:00 – 18:00</span></li>
+                        <li><span>Domingo:</span> <span>10:00 – 14:00</span></li>
+                    </ul>
+                </div>
+                <!-- Coluna 3 -->
+                <div class="footer-box">
+                    <h3>Onde Estamos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Portão de Ferro - RJ-105, 4803<br>Valverde, Nova Iguaçu - RJ<br>CEP: 26290-600</p>
+                    <div class="mapa-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.023812345678!2d-43.4987654!3d-22.7654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ1JzU1LjYiUyA0M8KwMjknNTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1650000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            © 2026 Heitor Eletro & Eletrônica Heitor TV - Todos os direitos reservados. Nova Iguaçu, RJ.
+        </div>
+    </footer>
+
+</body>
+</html>
