@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heitor Eletro | Tudo para sua casa com qualidade e preço justo</title>
+    <title>Heitor Eletro | Eletrodomésticos e Assistência Técnica em Nova Iguaçu</title>
     
+    <!-- SEO Básico -->
     <meta name="description" content="Ofertas imbatíveis em eletrodomésticos, eletrônicos e portáteis. Aproveite a Terça Maluca na Heitor Eletro! Assistência técnica de TVs e eletrodomésticos em Nova Iguaçu.">
     <meta name="keywords" content="eletrodomésticos, eletrônicos, assistência técnica, conserto de tv, Heitor Eletro, Nova Iguaçu, terça maluca, eletroportáteis, conserto de geladeira">
     <meta name="author" content="Heitor Eletro">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#FFD700">
 
+    <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brunocroft86.github.io/heitorcomp/">
     <meta property="og:title" content="Heitor Eletro | Tudo para sua casa com preço justo!">
@@ -18,13 +20,16 @@
     <meta property="og:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
     <meta property="og:locale" content="pt_BR">
 
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Heitor Eletro | Qualidade e Preço Justo">
     <meta name="twitter:description" content="Eletrodomésticos e Assistência Técnica de TVs em Nova Iguaçu. Confira nossas ofertas!">
     <meta name="twitter:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
 
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://brunocroft86.github.io/heitorcomp/">
 
+    <!-- Schema.org Local Business para o Google Maps / Pesquisa -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,10 +70,12 @@
     }
     </script>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <!-- Font Awesome for Icons -->
+     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -303,7 +310,7 @@
             color: var(--cor-texto-secundario);
         }
 
-        /* --- SEÇÃO DE PRODUTOS --- */
+        /* --- SEÇÃO DE PRODUTOS COM FILTRO E BUSCA --- */
         .terca-maluca-section {
             background: linear-gradient(135deg, #121212 0%, #2a2200 100%);
             border-left: 5px solid var(--cor-primaria);
@@ -691,10 +698,12 @@
 </head>
 <body>
 
+    <!-- Botão de WhatsApp Flutuante -->
     <a href="https://wa.me/5521976408505?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20ofertas." class="wpp-flutuante" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- CABEÇALHO -->
     <header>
         <div class="header-container">
             <a href="#" class="logo">
@@ -716,6 +725,7 @@
         </div>
     </header>
 
+    <!-- BANNER PRINCIPAL (HERO) -->
     <section class="hero">
         <div class="hero-content">
             <span class="badge-terca"><i class="fas fa-fire"></i> Promoções Semanais</span>
@@ -725,6 +735,7 @@
         </div>
     </section>
 
+    <!-- DIFERENCIAIS -->
     <section class="diferenciais">
         <div class="container">
             <div class="grid-diferenciais">
@@ -752,6 +763,7 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE PRODUTOS COM FILTRO E BUSCA -->
     <section id="produtos" class="terca-maluca-section">
         <div class="container">
             <div class="titulo-secao">
@@ -761,11 +773,13 @@
                 </p>
             </div>
 
+            <!-- BARRA DE PESQUISA -->
             <div class="busca-container">
                 <i class="fas fa-search"></i>
                 <input type="text" id="inputBusca" placeholder="O que você procura? Ex: fogão, ferro, ventilador...">
             </div>
 
+            <!-- BOTÕES DE FILTRO -->
             <div class="filtros-categoria">
                 <button class="btn-filtro ativo" onclick="filtrarCategoria('todos', this)">Ver Todos</button>
                 <button class="btn-filtro" onclick="filtrarCategoria('eletrodomesticos', this)">Eletrodomésticos</button>
@@ -774,9 +788,10 @@
                 <button class="btn-filtro" onclick="filtrarCategoria('acessorios', this)">Acessórios</button>
             </div>
 
+            <!-- GRID ÚNICO DE PRODUTOS -->
             <div class="grid-produtos" id="gridProdutos">
                 
-<div class="produto-card" data-categoria="eletrodomesticos">
+                <div class="produto-card" data-categoria="eletrodomesticos">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/cooktop_4b_itatiaia.jpeg" alt="Cooktop 4 bocas Itatiaia" loading="lazy">
@@ -785,7 +800,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Cooktop 4 bocas Itatiaia</h3>
                         <div class="preco-por">R$ 429,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Cooktop%204%20bocas%20Itatiaia" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cooktop%204%20bocas%20Itatiaia" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -799,7 +814,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Cooktop 5 bocas Itatiaia</h3>
                         <div class="preco-por">R$ 529,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Cooktop%205%20bocas%20Itatiaia" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cooktop%205%20bocas%20Itatiaia" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -813,7 +828,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Fogão 4 bocas tampa de vidro preto</h3>
                         <div class="preco-por">R$ 949,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fogão%204%20bocas%20tampa%20de%20vidro%20preto" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%204%20bocas%20tampa%20de%20vidro%20preto" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -827,7 +842,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Fogão Esmaltec Branco</h3>
                         <div class="preco-por">R$ 799,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fogão%20Esmaltec%20Branco" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%20Esmaltec%20Branco" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -841,7 +856,35 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Fogão Itatiaia 4 Bocas Preto</h3>
                         <div class="preco-por">R$ 969,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fogão%20Itatiaia%204%20Bocas%20Preto" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%20Itatiaia%204%20Bocas%20Preto" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletrodomesticos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/fogao_eletrico_1b.jpeg" alt="Fogão elétrico 1 boca" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Fogão elétrico 1 boca</h3>
+                        <div class="preco-por">R$ 75,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%20elétrico%201%20boca" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletrodomesticos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/fogao_eletrico_2b.jpeg" alt="Fogão elétrico 2 bocas" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Fogão elétrico 2 bocas</h3>
+                        <div class="preco-por">R$ 110,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%20elétrico%202%20bocas" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -855,21 +898,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Fogão tampa de vidro 4 bocas Suggar branco</h3>
                         <div class="preco-por">R$ 949,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fogão%20tampa%20de%20vidro%204%20bocas%20Suggar%20branco" target="_blank" class="btn-wpp-produto">
-                            <i class="fab fa-whatsapp"></i> Comprar no Zap
-                        </a>
-                    </div>
-                </div>
-                <div class="produto-card" data-categoria="eletrodomesticos">
-                    <div class="selo-desconto">OFERTA</div>
-                    <div class="produto-imagem">
-                        <img src="img/forno_britania.jpeg" alt="Forno elétrico Britânia 44L" loading="lazy">
-                    </div>
-                    <div class="produto-info">
-                        <div class="produto-categoria">Eletrodomésticos</div>
-                        <h3 class="produto-nome">Forno elétrico Britânia 44L</h3>
-                        <div class="preco-por">R$ 419,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Forno%20elétrico%20Britânia%2044L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fogão%20tampa%20de%20vidro%204%20bocas%20Suggar%20branco" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -883,7 +912,21 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Forno Elétrico Suggar 42L</h3>
                         <div class="preco-por">R$ 379,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Forno%20Elétrico%20Suggar%2042L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Forno%20Elétrico%20Suggar%2042L" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletrodomesticos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/forno_britania.jpeg" alt="Forno elétrico Britânia 44L" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrodomésticos</div>
+                        <h3 class="produto-nome">Forno elétrico Britânia 44L</h3>
+                        <div class="preco-por">R$ 419,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Forno%20elétrico%20Britânia%2044L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -897,7 +940,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Geladeira Consul 332 L defrost</h3>
                         <div class="preco-por">R$ 2.499,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Geladeira%20Consul%20332%20L%20defrost" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Geladeira%20Consul%20332%20L%20defrost" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -911,7 +954,7 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Geladeira Electrolux inox 330 litros</h3>
                         <div class="preco-por">R$ 3.499,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Geladeira%20Electrolux%20inox%20330%20litros" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Geladeira%20Electrolux%20inox%20330%20litros" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -925,13 +968,12 @@
                         <div class="produto-categoria">Eletrodomésticos</div>
                         <h3 class="produto-nome">Máquina de lavar 12 kg Colormaq</h3>
                         <div class="preco-por">R$ 1.899,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Máquina%20de%20lavar%2012%20kg%20Colormaq" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Máquina%20de%20lavar%2012%20kg%20Colormaq" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
                 </div>
-
-<div class="produto-card" data-categoria="eletronicos">
+                <div class="produto-card" data-categoria="eletronicos">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/antena_externa.jpeg" alt="Antena digital externa" loading="lazy">
@@ -940,7 +982,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Antena digital externa</h3>
                         <div class="preco-por">R$ 49,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Antena%20digital%20externa" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Antena%20digital%20externa" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -954,7 +996,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Antena digital interna</h3>
                         <div class="preco-por">R$ 35,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Antena%20digital%20interna" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Antena%20digital%20interna" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -968,7 +1010,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Caixa Torre Pulse Multi 1500 Watts</h3>
                         <div class="preco-por">R$ 1.299,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Caixa%20Torre%20Pulse%20Multi%201500%20Watts" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Caixa%20Torre%20Pulse%20Multi%201500%20Watts" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -982,7 +1024,21 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Campainha sem fio</h3>
                         <div class="preco-por">R$ 34,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Campainha%20sem%20fio" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Campainha%20sem%20fio" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/carregador_universal.jpg" alt="Carregador universal para notebook ou TVs" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Carregador universal para notebook ou TVs</h3>
+                        <div class="preco-por">R$ 74,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Carregador%20universal%20para%20notebook%20ou%20TVs" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -996,7 +1052,21 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Controle Remoto Vários modelos</h3>
                         <div class="preco-por">A partir de R$ 19,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Controle%20Remoto%20Vários%20modelos" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Controle%20Remoto%20Vários%20modelos" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/controle_xbox.jpg" alt="Controle sem fio Xbox" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Controle sem fio Xbox</h3>
+                        <div class="preco-por">R$ 99,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Controle%20sem%20fio%20Xbox" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1010,7 +1080,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Conversor digital Aquário</h3>
                         <div class="preco-por">R$ 120,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Conversor%20digital%20Aquário" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Conversor%20digital%20Aquário" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1024,7 +1094,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Conversor digital Proeletronic</h3>
                         <div class="preco-por">R$ 120,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Conversor%20digital%20Proeletronic" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Conversor%20digital%20Proeletronic" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1038,7 +1108,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Fone de ouvido Bluetooth Gold</h3>
                         <div class="preco-por">R$ 34,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fone%20de%20ouvido%20Bluetooth%20Gold" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fone%20de%20ouvido%20Bluetooth%20Gold" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1052,7 +1122,7 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Fone de ouvido com fio Galaxy</h3>
                         <div class="preco-por">R$ 9,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fone%20de%20ouvido%20com%20fio%20Galaxy" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fone%20de%20ouvido%20com%20fio%20Galaxy" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1066,7 +1136,21 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Fone de ouvido JBL sem fio</h3>
                         <div class="preco-por">R$ 59,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Fone%20de%20ouvido%20JBL%20sem%20fio" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fone%20de%20ouvido%20JBL%20sem%20fio" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/lampada_9w.jpg" alt="Lâmpada 9 watts" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Lâmpada 9 watts</h3>
+                        <div class="preco-por">R$ 3,49</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Lâmpada%209%20watts" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1080,7 +1164,49 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">Lâmpada Câmera Wi-Fi Durawell</h3>
                         <div class="preco-por">R$ 89,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Lâmpada%20Câmera%20Wi-Fi%20Durawell" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Lâmpada%20Câmera%20Wi-Fi%20Durawell" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/lampada_embutir_18w.jpeg" alt="Lâmpada de embutir 18watts quadrada" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Lâmpada de embutir 18watts quadrada</h3>
+                        <div class="preco-por">R$ 29,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Lâmpada%20de%20embutir%2018watts%20quadrada" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/pen_drive.jpeg" alt="Pen drive com músicas variadas" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Pen drive com músicas variadas</h3>
+                        <div class="preco-por">R$ 19,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Pen%20drive%20com%20músicas%20variadas" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="eletronicos">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/smartphone_redmi.jpg" alt="Smartphone redmi 14c" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Eletrônicos</div>
+                        <h3 class="produto-nome">Smartphone redmi 14c</h3>
+                        <div class="preco-por">R$ 849,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Smartphone%20redmi%2014c" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1094,13 +1220,12 @@
                         <div class="produto-categoria">Eletrônicos</div>
                         <h3 class="produto-nome">TV stick para TV virar smart</h3>
                         <div class="preco-por">R$ 249,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20TV%20stick%20para%20TV%20virar%20smart" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20TV%20stick%20para%20TV%20virar%20smart" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
                 </div>
-
-<div class="produto-card" data-categoria="portateis">
+                <div class="produto-card" data-categoria="portateis">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/airfryer_gaabor.jpeg" alt="AirFryer Gaabor 5.5 L" loading="lazy">
@@ -1109,7 +1234,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">AirFryer Gaabor 5.5 L</h3>
                         <div class="preco-por">R$ 349,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20AirFryer%20Gaabor%205.5%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20AirFryer%20Gaabor%205.5%20L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1123,7 +1248,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">AirFryer Mondial 4 litros family</h3>
                         <div class="preco-por">R$ 299,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20AirFryer%20Mondial%204%20litros%20family" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20AirFryer%20Mondial%204%20litros%20family" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1137,7 +1262,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">AirFryer Philco 4 litros</h3>
                         <div class="preco-por">R$ 349,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20AirFryer%20Philco%204%20litros" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20AirFryer%20Philco%204%20litros" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/batedeira_bak.jpeg" alt="Batedeira Bak 5 velocidades" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Batedeira Bak 5 velocidades</h3>
+                        <div class="preco-por">R$ 85,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Batedeira%20Bak%205%20velocidades" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1151,7 +1290,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Batedeira planetária Britânia</h3>
                         <div class="preco-por">R$ 320,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Batedeira%20planetária%20Britânia" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Batedeira%20planetária%20Britânia" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1165,7 +1304,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Batedeira planetária Mondial</h3>
                         <div class="preco-por">R$ 320,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Batedeira%20planetária%20Mondial" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Batedeira%20planetária%20Mondial" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1179,7 +1318,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Batedeira ultra 400 watts</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Batedeira%20ultra%20400%20watts" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Batedeira%20ultra%20400%20watts" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/batedeira_vermelha.jpeg" alt="Batedeira vermelha" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Batedeira vermelha</h3>
+                        <div class="preco-por">R$ 119,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Batedeira%20vermelha" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1193,7 +1346,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Cafeteira Kian 18 xícaras</h3>
                         <div class="preco-por">R$ 119,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Cafeteira%20Kian%2018%20xícaras" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cafeteira%20Kian%2018%20xícaras" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1207,7 +1360,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Chaleira elétrica em inox 1,8 L</h3>
                         <div class="preco-por">R$ 79,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Chaleira%20elétrica%20em%20inox%201,8%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Chaleira%20elétrica%20em%20inox%201,8%20L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1221,7 +1374,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Chaleira elétrica em vidro com LED 2 L</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Chaleira%20elétrica%20em%20vidro%20com%20LED%202%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Chaleira%20elétrica%20em%20vidro%20com%20LED%202%20L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1235,7 +1388,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Chaleira elétrica vermelha 1,8 L</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Chaleira%20elétrica%20vermelha%201,8%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Chaleira%20elétrica%20vermelha%201,8%20L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1249,7 +1402,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Churrasqueira elétrica Elgin</h3>
                         <div class="preco-por">R$ 149,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Churrasqueira%20elétrica%20Elgin" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Churrasqueira%20elétrica%20Elgin" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1263,7 +1416,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Escova alisadora secadora 1200w</h3>
                         <div class="preco-por">R$ 79,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Escova%20alisadora%20secadora%201200w" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Escova%20alisadora%20secadora%201200w" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/esmerilhadeira.jpeg" alt="Esmerilhadeira" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Esmerilhadeira</h3>
+                        <div class="preco-por">R$ 199,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Esmerilhadeira" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1277,7 +1444,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Espremedor de frutas 1,25 L vermelho</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Espremedor%20de%20frutas%201,25%20L%20vermelho" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Espremedor%20de%20frutas%201,25%20L%20vermelho" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1291,7 +1458,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Espremedor de frutas Mondial preto</h3>
                         <div class="preco-por">R$ 85,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Espremedor%20de%20frutas%20Mondial%20preto" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Espremedor%20de%20frutas%20Mondial%20preto" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1305,7 +1472,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Espremedor de frutas Mundial Branco</h3>
                         <div class="preco-por">R$ 85,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Espremedor%20de%20frutas%20Mundial%20Branco" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Espremedor%20de%20frutas%20Mundial%20Branco" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/faca_eletrica_bd.jpeg" alt="Faca elétrica Black e decker" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Faca elétrica Black e decker</h3>
+                        <div class="preco-por">R$ 149,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Faca%20elétrica%20Black%20e%20decker" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1319,7 +1500,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ferro a Seco Kian ou Startools</h3>
                         <div class="preco-por">R$ 89,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20a%20Seco%20Kian%20ou%20Startools" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20a%20Seco%20Kian%20ou%20Startools" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1333,35 +1514,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ferro Automático Black & Decker</h3>
                         <div class="preco-por">R$ 100,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20Automático%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
-                            <i class="fab fa-whatsapp"></i> Comprar no Zap
-                        </a>
-                    </div>
-                </div>
-                <div class="produto-card" data-categoria="portateis">
-                    <div class="selo-desconto">OFERTA</div>
-                    <div class="produto-imagem">
-                        <img src="img/ferro_vapor_kian.jpeg" alt="Ferro de passar a vapor Kian" loading="lazy">
-                    </div>
-                    <div class="produto-info">
-                        <div class="produto-categoria">Portáteis</div>
-                        <h3 class="produto-nome">Ferro de passar a vapor Kian</h3>
-                        <div class="preco-por">R$ 89,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20de%20passar%20a%20vapor%20Kian" target="_blank" class="btn-wpp-produto">
-                            <i class="fab fa-whatsapp"></i> Comprar no Zap
-                        </a>
-                    </div>
-                </div>
-                <div class="produto-card" data-categoria="portateis">
-                    <div class="selo-desconto">OFERTA</div>
-                    <div class="produto-imagem">
-                        <img src="img/ferro_kian_ultra.jpeg" alt="Ferro de passar a vapor Kian ultra" loading="lazy">
-                    </div>
-                    <div class="produto-info">
-                        <div class="produto-categoria">Portáteis</div>
-                        <h3 class="produto-nome">Ferro de passar a vapor Kian ultra</h3>
-                        <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20de%20passar%20a%20vapor%20Kian%20ultra" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20Automático%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1375,7 +1528,35 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ferro de passar Black & Decker</h3>
                         <div class="preco-por">R$ 119,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ferro%20de%20passar%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20de%20passar%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferro_vapor_kian.jpeg" alt="Ferro de passar a vapor Kian" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Ferro de passar a vapor Kian</h3>
+                        <div class="preco-por">R$ 89,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20de%20passar%20a%20vapor%20Kian" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferro_kian_ultra.jpeg" alt="Ferro de passar a vapor Kian ultra" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Ferro de passar a vapor Kian ultra</h3>
+                        <div class="preco-por">R$ 99,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20de%20passar%20a%20vapor%20Kian%20ultra" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1389,7 +1570,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Liquidificador Mondial 550w</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Liquidificador%20Mondial%20550w" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Liquidificador%20Mondial%20550w" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1403,7 +1584,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Liquidificador Mondial turbo peneira</h3>
                         <div class="preco-por">R$ 125,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Liquidificador%20Mondial%20turbo%20peneira" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Liquidificador%20Mondial%20turbo%20peneira" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1417,7 +1598,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Liquidificador Mondial turbo vermelho</h3>
                         <div class="preco-por">R$ 125,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Liquidificador%20Mondial%20turbo%20vermelho" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Liquidificador%20Mondial%20turbo%20vermelho" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1431,7 +1612,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Liquidificador turbo 1100w 12 vel</h3>
                         <div class="preco-por">R$ 159,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Liquidificador%20turbo%201100w%2012%20vel" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Liquidificador%20turbo%201100w%2012%20vel" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/nebulizador_gtech.jpeg" alt="Nebulizador GTech" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Nebulizador GTech</h3>
+                        <div class="preco-por">R$ 129,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Nebulizador%20GTech" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1445,7 +1640,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Panela de arroz 5 xícaras</h3>
                         <div class="preco-por">R$ 159,90</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20de%20arroz%205%20xícaras" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20de%20arroz%205%20xícaras" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1459,7 +1654,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Panela de arroz Mondial branca</h3>
                         <div class="preco-por">R$ 159,90</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20de%20arroz%20Mondial%20branca" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20de%20arroz%20Mondial%20branca" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/panela_pressao_verm.jpeg" alt="Panela de pressão elétrica 3 litros vermelha" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Panela de pressão elétrica 3 litros vermelha</h3>
+                        <div class="preco-por">R$ 350,00</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20de%20pressão%20elétrica%203%20litros%20vermelha" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1473,7 +1682,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Panela elétrica de pressão 3 L Itatiaia</h3>
                         <div class="preco-por">R$ 350,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20elétrica%20de%20pressão%203%20L%20Itatiaia" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20elétrica%20de%20pressão%203%20L%20Itatiaia" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1487,7 +1696,21 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Panela elétrica de pressão inox Kian 6 L</h3>
                         <div class="preco-por">R$ 450,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20elétrica%20de%20pressão%20inox%20Kian%206%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20elétrica%20de%20pressão%20inox%20Kian%206%20L" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/parafusadeira_titanium.jpeg" alt="Parafusadeira titanium" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Parafusadeira titanium</h3>
+                        <div class="preco-por">R$ 149,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Parafusadeira%20titanium" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1501,7 +1724,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Pipoqueira elétrica</h3>
                         <div class="preco-por">R$ 99,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Pipoqueira%20elétrica" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Pipoqueira%20elétrica" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1515,7 +1738,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Sanduicheira grill Kian 750w</h3>
                         <div class="preco-por">R$ 89,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Sanduicheira%20grill%20Kian%20750w" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Sanduicheira%20grill%20Kian%20750w" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1529,7 +1752,49 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Secador de cabelo Mondial 2000w</h3>
                         <div class="preco-por">R$ 159,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Secador%20de%20cabelo%20Mondial%202000w" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Secador%20de%20cabelo%20Mondial%202000w" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/serra_marmore_britania.jpeg" alt="Serra mármore Britânia" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Serra mármore Britânia</h3>
+                        <div class="preco-por">R$ 229,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Serra%20mármore%20Britânia" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/serra_marmore_nell.jpeg" alt="Serra mármore nell com 4 discos e luva" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Serra mármore nell com 4 discos e luva</h3>
+                        <div class="preco-por">R$ 229,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Serra%20mármore%20nell%20com%204%20discos%20e%20luva" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="portateis">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/triturador_eletrico.jpeg" alt="Triturador eletrico" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Portáteis</div>
+                        <h3 class="produto-nome">Triturador eletrico</h3>
+                        <div class="preco-por">R$ 119,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Triturador%20eletrico" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1543,7 +1808,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ventilador Britânia 40 cm turbo</h3>
                         <div class="preco-por">R$ 189,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ventilador%20Britânia%2040%20cm%20turbo" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ventilador%20Britânia%2040%20cm%20turbo" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1557,7 +1822,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ventilador Mondial 8 pás super turbo</h3>
                         <div class="preco-por">R$ 229,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ventilador%20Mondial%208%20pás%20super%20turbo" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ventilador%20Mondial%208%20pás%20super%20turbo" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1571,7 +1836,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ventilador Mondial de 6 pás Branco</h3>
                         <div class="preco-por">R$ 199,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ventilador%20Mondial%20de%206%20pás%20Branco" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ventilador%20Mondial%20de%206%20pás%20Branco" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1585,7 +1850,7 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ventilador Mondial de 6 pás preto</h3>
                         <div class="preco-por">R$ 199,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ventilador%20Mondial%20de%206%20pás%20preto" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ventilador%20Mondial%20de%206%20pás%20preto" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1599,13 +1864,26 @@
                         <div class="produto-categoria">Portáteis</div>
                         <h3 class="produto-nome">Ventilador Mondial de coluna turbo</h3>
                         <div class="preco-por">R$ 269,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Ventilador%20Mondial%20de%20coluna%20turbo" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ventilador%20Mondial%20de%20coluna%20turbo" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
                 </div>
-
-<div class="produto-card" data-categoria="acessorios">
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/cabo_hdmi.jpg" alt="Cabo HDMI alta resolução 2m" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Cabo HDMI alta resolução 2m</h3>
+                        <div class="preco-por">R$ 14,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cabo%20HDMI%20alta%20resolução%202m" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
                         <img src="img/cabo_coaxial.jpeg" alt="Cabo coaxial para antena digital" loading="lazy">
@@ -1614,7 +1892,105 @@
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Cabo coaxial para antena digital</h3>
                         <div class="preco-por">R$ 2,00 / metro</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Cabo%20coaxial%20para%20antena%20digital" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cabo%20coaxial%20para%20antena%20digital" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/cabo_impressora.jpg" alt="Cabo para impressora" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Cabo para impressora</h3>
+                        <div class="preco-por">R$ 19,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Cabo%20para%20impressora" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/carregador_iphone.jpeg" alt="Carregador para iPhone" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Carregador para iPhone</h3>
+                        <div class="preco-por">R$ 39,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Carregador%20para%20iPhone" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/click_gas.jpg" alt="Click para gás com mangueiras e presilhas" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Click para gás com mangueiras e presilhas</h3>
+                        <div class="preco-por">R$ 59,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Click%20para%20gás%20com%20mangueiras%20e%20presilhas" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/ferro_solda.jpg" alt="Ferro de solda 30 w 127v" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Ferro de solda 30 w 127v</h3>
+                        <div class="preco-por">R$ 29,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20de%20solda%2030%20w%20127v" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/filtro_linha.jpg" alt="Filtro de linha para proteger seus aparelhos" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Filtro de linha para proteger seus aparelhos</h3>
+                        <div class="preco-por">R$ 29,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Filtro%20de%20linha%20para%20proteger%20seus%20aparelhos" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/suporte_tv.jpeg" alt="Fixo para TVs até 100 polegadas" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Fixo para TVs até 100 polegadas</h3>
+                        <div class="preco-por">R$ 39,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Fixo%20para%20TVs%20até%20100%20polegadas" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/forma_airfryer.jpeg" alt="Forma descartável para Air fryer com 50" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Forma descartável para Air fryer com 50</h3>
+                        <div class="preco-por">R$ 19,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Forma%20descartável%20para%20Air%20fryer%20com%2050" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1628,7 +2004,7 @@
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Garrafa de café Stanley</h3>
                         <div class="preco-por">Sob Consulta</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Garrafa%20de%20café%20Stanley" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Garrafa%20de%20café%20Stanley" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1642,7 +2018,7 @@
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Hélices de ventilador</h3>
                         <div class="preco-por">A partir de R$ 29,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Hélices%20de%20ventilador" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Hélices%20de%20ventilador" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1656,7 +2032,7 @@
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Jogo de Panelas Antiaderente (Cor Cereja)</h3>
                         <div class="preco-por">R$ 139,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Jogo%20de%20Panelas%20Antiaderente%20(Cor%20Cereja)" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Jogo%20de%20Panelas%20Antiaderente%20(Cor%20Cereja)" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1664,13 +2040,13 @@
                 <div class="produto-card" data-categoria="acessorios">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
-                        <img src="img/panela_arroz_branca.jpeg" alt="Panela de pressão tradicional 4.5 L" loading="lazy">
+                        <img src="img/panela_tradicional45.jpeg" alt="Panela de pressão tradicional 4.5 L" loading="lazy">
                     </div>
                     <div class="produto-info">
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Panela de pressão tradicional 4.5 L</h3>
                         <div class="preco-por">R$ 69,99</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20de%20pressão%20tradicional%204.5%20L" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20de%20pressão%20tradicional%204.5%20L" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
@@ -1684,12 +2060,97 @@
                         <div class="produto-categoria">Acessórios</div>
                         <h3 class="produto-nome">Panela tradicional 7 litros</h3>
                         <div class="preco-por">R$ 120,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20o(a)%20Panela%20tradicional%207%20litros" target="_blank" class="btn-wpp-produto">
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Panela%20tradicional%207%20litros" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/protetor_raio.jpg" alt="Protetor para geladeira freezer máquina de lavar e etc" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Protetor para geladeira freezer máquina de lavar e etc</h3>
+                        <div class="preco-por">R$ 64,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Protetor%20para%20geladeira%20freezer%20máquina%20de%20lavar%20e%20etc" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/suporte_tv.jpeg" alt="Suporte para celular para carro" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Suporte para celular para carro</h3>
+                        <div class="preco-por">R$ 25,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Suporte%20para%20celular%20para%20carro" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/talheres_bandeja.jpeg" alt="Talheres com bandeja completo" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Talheres com bandeja completo</h3>
+                        <div class="preco-por">R$ 29,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Talheres%20com%20bandeja%20completo" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/talheres_vermelho.jpeg" alt="Talheres com bandeja vermelho" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Talheres com bandeja vermelho</h3>
+                        <div class="preco-por">R$ 29,99</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Talheres%20com%20bandeja%20vermelho" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/talheres_silicone.jpeg" alt="Talheres de silicone" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Talheres de silicone</h3>
+                        <div class="preco-por">R$ 65,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Talheres%20de%20silicone" target="_blank" class="btn-wpp-produto">
+                            <i class="fab fa-whatsapp"></i> Comprar no Zap
+                        </a>
+                    </div>
+                </div>
+                <div class="produto-card" data-categoria="acessorios">
+                    <div class="selo-desconto">OFERTA</div>
+                    <div class="produto-imagem">
+                        <img src="img/triturador_manual.jpeg" alt="Triturador manual" loading="lazy">
+                    </div>
+                    <div class="produto-info">
+                        <div class="produto-categoria">Acessórios</div>
+                        <h3 class="produto-nome">Triturador manual</h3>
+                        <div class="preco-por">R$ 19,90</div>
+                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Triturador%20manual" target="_blank" class="btn-wpp-produto">
                             <i class="fab fa-whatsapp"></i> Comprar no Zap
                         </a>
                     </div>
                 </div>
 
+                <!-- Mensagem de erro caso a pesquisa não ache nada -->
                 <div class="mensagem-erro-busca" id="mensagemErro">
                     <i class="fas fa-search" style="font-size: 30px; margin-bottom: 10px; color: var(--cor-primaria);"></i><br>
                     Ops! Não encontramos nenhum produto com esse nome.
@@ -1699,6 +2160,7 @@
         </div>
     </section>
 
+    <!-- ASSISTÊNCIA TÉCNICA -->
     <section id="assistencia" class="assistencia">
         <div class="container">
             <div class="assistencia-wrapper">
@@ -1719,6 +2181,7 @@
         </div>
     </section>
 
+    <!-- REDES SOCIAIS -->
     <section class="redes-instagram">
         <div class="container">
             <div class="titulo-secao">Siga Nossas <span>Redes Sociais</span></div>
@@ -1734,14 +2197,17 @@
         </div>
     </section>
 
+    <!-- RODAPÉ E CONTATOS -->
     <footer id="contato">
         <div class="container">
             <div class="footer-grid">
+                <!-- Coluna 1 -->
                 <div class="footer-box">
                     <h3 style="font-style: italic;">HEITOR ELETRO</h3>
                     <p>Tudo para sua casa com qualidade e preço justo!</p>
                     <p style="margin-top: 15px;"><i class="fab fa-whatsapp"></i> (21) 97640-8505</p>
                 </div>
+                <!-- Coluna 2 -->
                 <div class="footer-box">
                     <h3>Funcionamento</h3>
                     <ul class="horarios">
@@ -1754,6 +2220,7 @@
                         <li><span>Domingo:</span> <span>10:00 – 14:00</span></li>
                     </ul>
                 </div>
+                <!-- Coluna 3 -->
                 <div class="footer-box">
                     <h3>Onde Estamos</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Portão de Ferro - RJ-105, 4803<br>Valverde, Nova Iguaçu - RJ<br>CEP: 26290-600</p>
@@ -1776,6 +2243,7 @@
         </div>
     </footer>
 
+    <!-- SCRIPT DE BUSCA E FILTRO INTELIGENTE -->
     <script>
         let categoriaAtual = 'todos';
         
