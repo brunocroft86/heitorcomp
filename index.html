@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heitor Eletro | Eletrodomésticos e Assistência Técnica em Nova Iguaçu</title>
     
-    <!-- SEO Básico -->
     <meta name="description" content="Ofertas imbatíveis em eletrodomésticos, eletrônicos e portáteis. Aproveite a Terça Maluca na Heitor Eletro! Assistência técnica de TVs e eletrodomésticos em Nova Iguaçu.">
     <meta name="keywords" content="eletrodomésticos, eletrônicos, assistência técnica, conserto de tv, Heitor Eletro, Nova Iguaçu, terça maluca, eletroportáteis, conserto de geladeira">
     <meta name="author" content="Heitor Eletro">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#FFD700">
 
-    <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brunocroft86.github.io/heitorcomp/">
     <meta property="og:title" content="Heitor Eletro | Tudo para sua casa com preço justo!">
@@ -20,16 +18,13 @@
     <meta property="og:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Heitor Eletro | Qualidade e Preço Justo">
     <meta name="twitter:description" content="Eletrodomésticos e Assistência Técnica de TVs em Nova Iguaçu. Confira nossas ofertas!">
     <meta name="twitter:image" content="https://brunocroft86.github.io/heitorcomp/img/logo_heitor.png">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://brunocroft86.github.io/heitorcomp/">
 
-    <!-- Schema.org Local Business para o Google Maps / Pesquisa -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,12 +65,10 @@
     }
     </script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -693,17 +686,44 @@
             .assistencia-wrapper {
                 flex-direction: column-reverse;
             }
+            
+            /* Ajustes para forçar os cards em 2 colunas lado a lado no celular */
+            .grid-produtos {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .produto-imagem {
+                height: 150px;
+                padding: 10px;
+            }
+            .produto-info {
+                padding: 12px;
+            }
+            .produto-categoria {
+                font-size: 10px;
+            }
+            .produto-nome {
+                font-size: 13px;
+                height: 40px;
+                margin-bottom: 5px;
+            }
+            .preco-por {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .btn-wpp-produto {
+                font-size: 12px;
+                padding: 8px 5px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Botão de WhatsApp Flutuante -->
     <a href="https://wa.me/5521976408505?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20ofertas." class="wpp-flutuante" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- CABEÇALHO -->
     <header>
         <div class="header-container">
             <a href="#" class="logo">
@@ -725,7 +745,6 @@
         </div>
     </header>
 
-    <!-- BANNER PRINCIPAL (HERO) -->
     <section class="hero">
         <div class="hero-content">
             <span class="badge-terca"><i class="fas fa-fire"></i> Promoções Semanais</span>
@@ -735,7 +754,6 @@
         </div>
     </section>
 
-    <!-- DIFERENCIAIS -->
     <section class="diferenciais">
         <div class="container">
             <div class="grid-diferenciais">
@@ -763,7 +781,6 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE PRODUTOS COM FILTRO E BUSCA -->
     <section id="produtos" class="terca-maluca-section">
         <div class="container">
             <div class="titulo-secao">
@@ -773,13 +790,11 @@
                 </p>
             </div>
 
-            <!-- BARRA DE PESQUISA -->
             <div class="busca-container">
                 <i class="fas fa-search"></i>
                 <input type="text" id="inputBusca" placeholder="O que você procura? Ex: fogão, ferro, ventilador...">
             </div>
 
-            <!-- BOTÕES DE FILTRO -->
             <div class="filtros-categoria">
                 <button class="btn-filtro ativo" onclick="filtrarCategoria('todos', this)">Ver Todos</button>
                 <button class="btn-filtro" onclick="filtrarCategoria('eletrodomesticos', this)">Eletrodomésticos</button>
@@ -788,7 +803,6 @@
                 <button class="btn-filtro" onclick="filtrarCategoria('acessorios', this)">Acessórios</button>
             </div>
 
-            <!-- GRID ÚNICO DE PRODUTOS -->
             <div class="grid-produtos" id="gridProdutos">
                 
                 <div class="produto-card" data-categoria="eletrodomesticos">
@@ -1505,20 +1519,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="produto-card" data-categoria="portateis">
-                    <div class="selo-desconto">OFERTA</div>
-                    <div class="produto-imagem">
-                        <img src="img/ferrobeck.webp" alt="Ferro Automático Black & Decker" loading="lazy">
-                    </div>
-                    <div class="produto-info">
-                        <div class="produto-categoria">Portáteis</div>
-                        <h3 class="produto-nome">Ferro Automático Black & Decker</h3>
-                        <div class="preco-por">R$ 100,00</div>
-                        <a href="https://wa.me/5521976408505?text=Olá!%20Gostaria%20de%20comprar%20Ferro%20Automático%20Black%20&%20Decker" target="_blank" class="btn-wpp-produto">
-                            <i class="fab fa-whatsapp"></i> Comprar no Zap
-                        </a>
-                    </div>
-                </div>
+                
                 <div class="produto-card" data-categoria="portateis">
                     <div class="selo-desconto">OFERTA</div>
                     <div class="produto-imagem">
@@ -2150,7 +2151,6 @@
                     </div>
                 </div>
 
-                <!-- Mensagem de erro caso a pesquisa não ache nada -->
                 <div class="mensagem-erro-busca" id="mensagemErro">
                     <i class="fas fa-search" style="font-size: 30px; margin-bottom: 10px; color: var(--cor-primaria);"></i><br>
                     Ops! Não encontramos nenhum produto com esse nome.
@@ -2160,7 +2160,6 @@
         </div>
     </section>
 
-    <!-- ASSISTÊNCIA TÉCNICA -->
     <section id="assistencia" class="assistencia">
         <div class="container">
             <div class="assistencia-wrapper">
@@ -2181,7 +2180,6 @@
         </div>
     </section>
 
-    <!-- REDES SOCIAIS -->
     <section class="redes-instagram">
         <div class="container">
             <div class="titulo-secao">Siga Nossas <span>Redes Sociais</span></div>
@@ -2197,17 +2195,14 @@
         </div>
     </section>
 
-    <!-- RODAPÉ E CONTATOS -->
     <footer id="contato">
         <div class="container">
             <div class="footer-grid">
-                <!-- Coluna 1 -->
                 <div class="footer-box">
                     <h3 style="font-style: italic;">HEITOR ELETRO</h3>
                     <p>Tudo para sua casa com qualidade e preço justo!</p>
                     <p style="margin-top: 15px;"><i class="fab fa-whatsapp"></i> (21) 97640-8505</p>
                 </div>
-                <!-- Coluna 2 -->
                 <div class="footer-box">
                     <h3>Funcionamento</h3>
                     <ul class="horarios">
@@ -2220,17 +2215,13 @@
                         <li><span>Domingo:</span> <span>10:00 – 14:00</span></li>
                     </ul>
                 </div>
-                <!-- Coluna 3 -->
-                <!-- Coluna 3 -->
                 <div class="footer-box">
                     <h3>Onde Estamos</h3>
                     
-                    <!-- Endereço clicável -->
                     <a href="https://www.google.com/maps/place/Eletr%C3%B4nica+Heitor+tv/@-22.7738127,-43.5286661,17z/data=!4m6!3m5!1s0x995e840aa6adf1:0x9f526498e860a8ac!8m2!3d-22.7739081!4d-43.5286006!16s%2Fg%2F11bc713plr?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--cor-primaria)'" onmouseout="this.style.color='var(--cor-texto-secundario)'">
                         <p style="color: inherit; cursor: pointer;"><i class="fas fa-map-marker-alt"></i> Portão de Ferro - RJ-105, 4803<br>Valverde, Nova Iguaçu - RJ<br>CEP: 26290-600</p>
                     </a>
 
-                    <!-- Botão de Rota -->
                     <a href="https://www.google.com/maps/place/Eletr%C3%B4nica+Heitor+tv/@-22.7738127,-43.5286661,17z/data=!4m6!3m5!1s0x995e840aa6adf1:0x9f526498e860a8ac!8m2!3d-22.7739081!4d-43.5286006!16s%2Fg%2F11bc713plr?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-principal" style="padding: 6px 15px; font-size: 13px; margin-bottom: 15px; display: inline-block;">
                         <i class="fas fa-route"></i> Traçar Rota
                     </a>
@@ -2254,7 +2245,6 @@
         </div>
     </footer>
 
-    <!-- SCRIPT DE BUSCA E FILTRO INTELIGENTE -->
     <script>
         let categoriaAtual = 'todos';
         
